@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     Double he=Double.parseDouble(houredit.getEditableText().toString());
                     Double me=Double.parseDouble(minedit.getEditableText().toString());
                     Double se=Double.parseDouble(secedit.getEditableText().toString());
-                    if(im>12 || id >31 ||he>23 || me>59 ||se>59 ){
+                    if(im>12 || id >31 ||he>23 || me>59 ||se>59 || im<0 || id<0 || he<0 || me<0 || se<0  ){
                         Toast back=Toast.makeText(MainActivity.this,"你確定這種時間存在?",Toast.LENGTH_LONG);
                         back.show();
                         return;
